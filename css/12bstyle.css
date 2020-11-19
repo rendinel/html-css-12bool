@@ -7,6 +7,8 @@
 .container {
   width: 1170px;
   margin: 0 auto;
+  max-width:100%;
+  /* max-width:100%; aggiungere perché altrimenti container ha dimensione fissa a 1170px cosi invece non occupa piú del 100% dello spazio disponibile */
 }
 
 .container::after {
@@ -17,6 +19,15 @@
 
 [class*="col-"] {
   float: left;
+}
+/* significa tutti i col- figli di col- */
+[class*="col-"] [class*="col-"] {
+  
+}
+
+/* significa tutti i container figli di col- */
+[class*="col-"] .container {
+  padding: 20px;
 }
 
 .col-12 {

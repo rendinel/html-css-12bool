@@ -1,7 +1,15 @@
 [class*="col-"] {
   background: pink;
   border: 1px solid black;
-  height: 300px;
+  min-height: 300px;
   line-height: 300px;
   text-align: center;
+}
+/* prende le class col dentro un container contenuto a sua volta in una class col  */
+[class*="col-"] .container [class*="col-"] {
+  height: 260px;
+  /* height 260 perche 300px height padre meno 20 px padding per lato */
+  line-height: 260px;
+  background-color: lightcoral;
+  border: 1px solid white;
 }
