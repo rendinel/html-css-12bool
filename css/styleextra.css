@@ -1,0 +1,22 @@
+[class*="col-"] {
+  background: #000000;
+  border: 1px solid #A7CBD5;
+  height: 50px;
+}
+
+.pinkwall{
+  height: 500px;
+  width: 1170px;
+  background-image: url(../images/wall.gif);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: -11%;
+}
+
+body{
+  position: relative;
+}

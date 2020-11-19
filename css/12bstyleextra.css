@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  max-width:100%;
+  /* max-width:100%; aggiungere perché altrimenti container ha dimensione fissa a 1170px cosi invece non occupa piú del 100% dello spazio disponibile */
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: calc((100% / 11) * 11);
+}
+
+.col-10 {
+  width: calc((100% / 10) * 10);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-1 {
+  width: calc((100% / 12) * 1 );
+}
+
+.col-075 {
+  width: calc((100% / 12) * 0.75 );
+}
+
+.col-050 {
+  width: calc((100% / 12) * 0.5 );
+}
+
+.col-025 {
+  width: calc((100% / 12) * 0.25 );
+}
